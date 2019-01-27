@@ -54,6 +54,7 @@ namespace LabControl
 
         protected override void OnTextChanged(EventArgs e)
         {
+
             if (DecFormat)
             {
                 try
@@ -103,6 +104,8 @@ namespace LabControl
 
                 Text = ColorValue.ToString("X");
             }
+
+            base.OnTextChanged(e);
         }
 
         protected override void OnKeyPress(KeyPressEventArgs e)

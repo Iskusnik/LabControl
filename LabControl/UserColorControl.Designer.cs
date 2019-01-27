@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.colorNumberBoxRed = new LabControl.ColorNumberBox(this.components);
-            this.colorNumberBoxGreen = new LabControl.ColorNumberBox(this.components);
-            this.colorNumberBoxBlue = new LabControl.ColorNumberBox(this.components);
             this.labelRed = new System.Windows.Forms.Label();
             this.labelGreen = new System.Windows.Forms.Label();
             this.labelBlue = new System.Windows.Forms.Label();
@@ -39,6 +36,9 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.radioButtonHex = new System.Windows.Forms.RadioButton();
             this.radioButtonDec = new System.Windows.Forms.RadioButton();
+            this.colorNumberBoxRed = new LabControl.ColorNumberBox(this.components);
+            this.colorNumberBoxGreen = new LabControl.ColorNumberBox(this.components);
+            this.colorNumberBoxBlue = new LabControl.ColorNumberBox(this.components);
             this.pictureBoxColor = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -47,36 +47,6 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxColor)).BeginInit();
             this.SuspendLayout();
-            // 
-            // colorNumberBoxRed
-            // 
-            this.colorNumberBoxRed.DecFormat = true;
-            this.colorNumberBoxRed.Location = new System.Drawing.Point(70, 9);
-            this.colorNumberBoxRed.Name = "colorNumberBoxRed";
-            this.colorNumberBoxRed.Size = new System.Drawing.Size(42, 20);
-            this.colorNumberBoxRed.TabIndex = 0;
-            this.colorNumberBoxRed.Text = "255";
-            this.colorNumberBoxRed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // colorNumberBoxGreen
-            // 
-            this.colorNumberBoxGreen.DecFormat = true;
-            this.colorNumberBoxGreen.Location = new System.Drawing.Point(70, 35);
-            this.colorNumberBoxGreen.Name = "colorNumberBoxGreen";
-            this.colorNumberBoxGreen.Size = new System.Drawing.Size(42, 20);
-            this.colorNumberBoxGreen.TabIndex = 1;
-            this.colorNumberBoxGreen.Text = "255";
-            this.colorNumberBoxGreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // colorNumberBoxBlue
-            // 
-            this.colorNumberBoxBlue.DecFormat = true;
-            this.colorNumberBoxBlue.Location = new System.Drawing.Point(70, 61);
-            this.colorNumberBoxBlue.Name = "colorNumberBoxBlue";
-            this.colorNumberBoxBlue.Size = new System.Drawing.Size(42, 20);
-            this.colorNumberBoxBlue.TabIndex = 2;
-            this.colorNumberBoxBlue.Text = "255";
-            this.colorNumberBoxBlue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // labelRed
             // 
@@ -159,6 +129,40 @@
             this.radioButtonDec.TabStop = true;
             this.radioButtonDec.Text = "Dec";
             this.radioButtonDec.UseVisualStyleBackColor = true;
+            this.radioButtonDec.CheckedChanged += new System.EventHandler(this.radioButtonDec_CheckedChanged);
+            // 
+            // colorNumberBoxRed
+            // 
+            this.colorNumberBoxRed.DecFormat = true;
+            this.colorNumberBoxRed.Location = new System.Drawing.Point(70, 9);
+            this.colorNumberBoxRed.Name = "colorNumberBoxRed";
+            this.colorNumberBoxRed.Size = new System.Drawing.Size(42, 20);
+            this.colorNumberBoxRed.TabIndex = 0;
+            this.colorNumberBoxRed.Text = "255";
+            this.colorNumberBoxRed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.colorNumberBoxRed.TextChanged += new System.EventHandler(this.colorNumberBoxRed_TextChanged);
+            // 
+            // colorNumberBoxGreen
+            // 
+            this.colorNumberBoxGreen.DecFormat = true;
+            this.colorNumberBoxGreen.Location = new System.Drawing.Point(70, 35);
+            this.colorNumberBoxGreen.Name = "colorNumberBoxGreen";
+            this.colorNumberBoxGreen.Size = new System.Drawing.Size(42, 20);
+            this.colorNumberBoxGreen.TabIndex = 1;
+            this.colorNumberBoxGreen.Text = "255";
+            this.colorNumberBoxGreen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.colorNumberBoxGreen.TextChanged += new System.EventHandler(this.colorNumberBoxGreen_TextChanged);
+            // 
+            // colorNumberBoxBlue
+            // 
+            this.colorNumberBoxBlue.DecFormat = true;
+            this.colorNumberBoxBlue.Location = new System.Drawing.Point(70, 61);
+            this.colorNumberBoxBlue.Name = "colorNumberBoxBlue";
+            this.colorNumberBoxBlue.Size = new System.Drawing.Size(42, 20);
+            this.colorNumberBoxBlue.TabIndex = 2;
+            this.colorNumberBoxBlue.Text = "255";
+            this.colorNumberBoxBlue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.colorNumberBoxBlue.TextChanged += new System.EventHandler(this.colorNumberBoxBlue_TextChanged);
             // 
             // pictureBoxColor
             // 
