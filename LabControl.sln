@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabControl", "LabControl\LabControl.csproj", "{C42F5F0A-CEEF-4254-9E52-66D697484043}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabControlColor", "LabControl\LabControlColor.csproj", "{C42F5F0A-CEEF-4254-9E52-66D697484043}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestControlsApplication", "TestControlsApplication\TestControlsApplication.csproj", "{EADCB604-5153-4127-9A5E-891B8CEAC540}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoursWpfApp", "HouresWpfApp\HoursWpfApp.csproj", "{50AD597B-6697-4EB3-BA04-921013303C3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EADCB604-5153-4127-9A5E-891B8CEAC540}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EADCB604-5153-4127-9A5E-891B8CEAC540}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EADCB604-5153-4127-9A5E-891B8CEAC540}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AD597B-6697-4EB3-BA04-921013303C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AD597B-6697-4EB3-BA04-921013303C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AD597B-6697-4EB3-BA04-921013303C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AD597B-6697-4EB3-BA04-921013303C3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
